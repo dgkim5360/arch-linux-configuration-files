@@ -1,0 +1,38 @@
+#!/bin/bash
+print_volume() {
+	volume="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')"
+	if test "$volume" -gt 0
+	then
+		echo -e "${volume}%"
+	else
+		echo -e "Mute"
+	fi
+}
+
+print_wifi() {
+	ip=$(ip route get 8.8.8.8 2>/dev/null|grep -Eo 'src [0-9.]+'|grep -Eo '[0-9.]+')
+
+	if hash iw
+	then
+		wifi=$(iw wlp2s0 link | grep SSID | sed 's,.*SSID: ,,')
+		# connectedto=$(iw wlp2s0 link | grep Connected | awk '{print $3}' | cut -c 10-)
+	fi
+
+	echo -e "$wifi($ip)"
+}
+
+print_bat(){
+	hash acpi || return 0
+	charge="$(awk '{ sum += $1 } END { print sum }' /sys/class/power_supply/BAT*/capacity)"
+	echo -e "${charge}%"
+}
+
+print_date(){
+	date "+%H:%M%:::z %a %Y-%m-%d"
+}
+
+while true
+do
+	xsetroot -name " $USER $(print_wifi) $(print_volume) $(print_bat) $(print_date)"
+	sleep 5
+done
