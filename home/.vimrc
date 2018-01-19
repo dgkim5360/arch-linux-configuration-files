@@ -34,4 +34,8 @@ nnoremap <c-k> <c-w><c-k>
 nnoremap <c-h> <c-w><c-h>
 nnoremap <c-l> <c-w><c-l>
 
+" Refresh
+nnoremap <leader>R :checktime<cr>
+
+" NERDTree
 nnoremap <leader>N :NERDTree<cr>
