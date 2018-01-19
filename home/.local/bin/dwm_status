@@ -1,8 +1,16 @@
 #!/bin/bash
+# Reference: https://github.com/kaihendry/dotfiles/blob/master/bin/dwm_status
+
+print_backlight() {
+	printf "%.f%%" $(xbacklight -get)
+}
+
 print_volume() {
-	volume="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')"
-	if test "$volume" -gt 0
+	master=$(amixer get Master | tail -n1)
+	is_on=$(echo $master| sed -r 's/.*\[(on|off)\]$/\1/')
+	if test "$is_on" = "on"
 	then
+		volume="$(echo $master | sed -r 's/.*\[(.*)%\].*/\1/')"
 		echo -e "${volume}%"
 	else
 		echo -e "Mute"
@@ -15,10 +23,19 @@ print_wifi() {
 	if hash iw
 	then
 		wifi=$(iw wlp2s0 link | grep SSID | sed 's,.*SSID: ,,')
-		# connectedto=$(iw wlp2s0 link | grep Connected | awk '{print $3}' | cut -c 10-)
 	fi
 
 	echo -e "$wifi($ip)"
+}
+
+print_mem(){
+	memfree=$(($(grep -m1 'MemAvailable:' /proc/meminfo | awk '{print $2}') / 1024))
+	echo -e "$memfree"
+}
+
+print_temp(){
+	test -f /sys/class/thermal/thermal_zone0/temp || return 0
+	echo $(head -c 2 /sys/class/thermal/thermal_zone0/temp)C
 }
 
 print_bat(){
@@ -33,6 +50,6 @@ print_date(){
 
 while true
 do
-	xsetroot -name " $USER $(print_wifi) $(print_volume) $(print_bat) $(print_date)"
+	xsetroot -name " $USER $(print_wifi) $(print_backlight) $(print_volume) $(print_bat) $(print_date)"
 	sleep 5
 done
