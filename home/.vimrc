@@ -3,6 +3,7 @@ execute pathogen#infect()
 " tpope/vim-pathogen
 " tpope/vim-surround
 " scrooloose/nerdtree
+" w0rp/ale
 " junegunn/goyo.vim
 
 syntax on
@@ -36,6 +37,5 @@ nnoremap <c-l> <c-w><c-l>
 
 " Refresh
 nnoremap <leader>R :checktime<cr>
-
 " NERDTree
 nnoremap <leader>N :NERDTree<cr>
