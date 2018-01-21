@@ -1,7 +1,6 @@
 " Plugins
-execute pathogen#infect()
-" tpope/vim-pathogen
 " tpope/vim-surround
+" srstevenson/vim-picker
 " scrooloose/nerdtree
 " w0rp/ale
 " junegunn/goyo.vim
@@ -37,5 +36,6 @@ nnoremap <c-l> <c-w><c-l>
 
 " Refresh
 nnoremap <leader>R :checktime<cr>
+
 " NERDTree
 nnoremap <leader>N :NERDTree<cr>
