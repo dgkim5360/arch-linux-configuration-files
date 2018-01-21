@@ -39,3 +39,8 @@ nnoremap <leader>R :checktime<cr>
 
 " NERDTree
 nnoremap <leader>N :NERDTree<cr>
+
+" vim-picker
+nnoremap <leader>pe :PickerEdit<cr>
+nnoremap <leader>ps :PickerSplit<cr>
+nnoremap <leader>pt :PickerTabedit<cr>
