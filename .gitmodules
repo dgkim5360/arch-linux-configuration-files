@@ -1,0 +1,3 @@
+[submodule "home/builds/xroot-status"]
+	path = home/builds/xroot-status
+	url = https://github.com/dgkim5360/xroot-status.git
