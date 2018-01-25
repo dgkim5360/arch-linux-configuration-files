@@ -4,9 +4,13 @@
 " scrooloose/nerdtree
 " w0rp/ale
 " junegunn/goyo.vim
+" morhetz/gruvbox
 
 syntax on
 filetype plugin indent on
+
+colorscheme gruvbox
+set background=dark
 
 set number
 set incsearch
@@ -38,9 +42,10 @@ nnoremap <c-l> <c-w><c-l>
 nnoremap <leader>R :checktime<cr>
 
 " NERDTree
-nnoremap <leader>N :NERDTree<cr>
+nnoremap <leader>N :NERDTreeToggle<cr>
 
 " vim-picker
 nnoremap <leader>pe :PickerEdit<cr>
 nnoremap <leader>ps :PickerSplit<cr>
+nnoremap <leader>pv :PickerVsplit<cr>
 nnoremap <leader>pt :PickerTabedit<cr>

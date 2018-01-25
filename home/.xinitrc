@@ -2,5 +2,7 @@
 
 scim -d
 
-~/.local/bin/dwm_status &
+xset s 300
+xroot-status &
+.local/bin/xsidle.sh slock &
 exec dwm

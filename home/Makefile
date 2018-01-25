@@ -10,5 +10,5 @@ sync:
 	@echo "Updating suckless configurations ..."
 	@cp ~/builds/st/config.h builds/st/
 	@cp ~/builds/dwm/config.h builds/dwm/
-	@cp ~/.local/bin/dwm_status .local/bin/
+	@cp -r ~/.local/bin .local/
 	@echo "Done."
