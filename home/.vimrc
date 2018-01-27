@@ -1,5 +1,6 @@
 " Plugins
 " tpope/vim-surround
+" tpope/vim-commentary
 " srstevenson/vim-picker
 " scrooloose/nerdtree
 " w0rp/ale
@@ -37,6 +38,14 @@ nnoremap <c-j> <c-w><c-j>
 nnoremap <c-k> <c-w><c-k>
 nnoremap <c-h> <c-w><c-h>
 nnoremap <c-l> <c-w><c-l>
+
+" Mapping to traverse tabs
+execute "set <m-k>=\ek"
+execute "set <m-j>=\ej"
+execute "set <m-w>=\ew"
+nnoremap <m-k> :tabnext<cr>
+nnoremap <m-j> :tabprevious<cr>
+nnoremap <m-w> :tabclose<cr>
 
 " Refresh
 nnoremap <leader>R :checktime<cr>
