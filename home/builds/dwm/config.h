@@ -78,7 +78,6 @@ static Key keys[] = {
 	{ 0,									XF86MonBrightnessDown,	spawn,					{.v = backlightdowncmd } },
 	{ 0,									XF86MonBrightnessUp,		spawn,					{.v = backlightupcmd } },
 	{ 0,									XF86AudioMute,					spawn,					{.v = soundtogglecmd } },
-	{ 0,									XF86AudioMute,					spawn,					{.v = soundtogglecmd } },
 	{ 0,									XF86AudioLowerVolume,		spawn,					{.v = sounddowncmd } },
 	{ 0,									XF86AudioRaiseVolume,		spawn,					{.v = soundupcmd } },
 	{ MODKEY,             XK_b,										togglebar,      {0} },
