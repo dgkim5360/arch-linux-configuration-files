@@ -6,6 +6,7 @@ sync:
 	@cp ~/.vimrc .
 	@cp ~/.xprofile .
 	@cp ~/.xinitrc .
+	@cp ~/.config/dunst/dunstrc .config/dunst/
 	@echo "Done."
 	@echo "Updating suckless configurations ..."
 	@cp ~/builds/st/config.h builds/st/
