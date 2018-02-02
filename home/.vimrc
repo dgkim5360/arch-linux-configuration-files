@@ -6,6 +6,7 @@
 " w0rp/ale
 " junegunn/goyo.vim
 " morhetz/gruvbox
+" lervag/vimtex
 
 syntax on
 filetype plugin indent on
@@ -33,6 +34,9 @@ noremap <down> <nop>
 noremap <left> <nop>
 noremap <right> <nop>
 
+" Mappings in Korean typing
+inoremap ㅓㅏ <esc>
+
 " Mappings to traverse panes
 nnoremap <c-j> <c-w><c-j>
 nnoremap <c-k> <c-w><c-k>
@@ -58,3 +62,6 @@ nnoremap <leader>pe :PickerEdit<cr>
 nnoremap <leader>ps :PickerSplit<cr>
 nnoremap <leader>pv :PickerVsplit<cr>
 nnoremap <leader>pt :PickerTabedit<cr>
+
+" vimtex options
+let g:vimtex_view_general_viewer = 'zathura'
