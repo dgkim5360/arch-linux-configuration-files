@@ -7,6 +7,7 @@ sync:
 	@cp ~/.xprofile .
 	@cp ~/.xinitrc .
 	@cp ~/.config/dunst/dunstrc .config/dunst/
+	@cp -r ~/.scim .
 	@echo "Done."
 	@echo "Updating suckless configurations ..."
 	@cp ~/builds/st/config.h builds/st/
