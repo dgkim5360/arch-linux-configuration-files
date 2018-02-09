@@ -6,6 +6,7 @@ sync:
 	@cp ~/.vimrc .
 	@cp ~/.xprofile .
 	@cp ~/.xinitrc .
+	@cp ~/.latexmkrc .
 	@cp ~/.config/dunst/dunstrc .config/dunst/
 	@cp -r ~/.scim .
 	@echo "Done."
