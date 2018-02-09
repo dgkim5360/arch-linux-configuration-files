@@ -14,4 +14,6 @@ fi
 xset s 300
 xroot-status &
 .local/bin/xsidle.sh slock &
+./.fehbg
+xcompmgr &
 exec dwm
