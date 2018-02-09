@@ -1,3 +1,4 @@
+/DefaultIMEngineFactory/en_US = c6bebc27-6324-4b77-8ad4-6d41dcaf2e08
 /FrontEnd/ChangeFactoryGlobally = false
 /FrontEnd/IMOpenedByDefault = false
 /FrontEnd/OnTheSpot = true
@@ -12,11 +13,13 @@
 /Hotkeys/FrontEnd/Off = 
 /Hotkeys/FrontEnd/On = 
 /Hotkeys/FrontEnd/PreviousFactory = 
-/Hotkeys/FrontEnd/ShowFactoryMenu = Control+Alt+Right
+/Hotkeys/FrontEnd/ShowFactoryMenu = 
 /Hotkeys/FrontEnd/Trigger = Control+space
 /Hotkeys/FrontEnd/ValidKeyMask = Shift+Control+Alt+Meta+QuirkKanaRo
+/Hotkeys/IMEngine/List = d75857a5-4148-4745-89e2-1da7ddaf70a9
+/Hotkeys/IMEngine/d75857a5-4148-4745-89e2-1da7ddaf70a9 = Control+grave
 /IMEngine/Hangul/CommitByWord = false
-/IMEngine/Hangul/HangulKey = Control+grave
+/IMEngine/Hangul/HangulKey = 
 /IMEngine/Hangul/HanjaKey = F9
 /IMEngine/Hangul/HanjaModeKey = 
 /IMEngine/Hangul/KeyboardLayout = 2
@@ -44,4 +47,4 @@
 /Panel/Gtk/ToolBar/ShowMenuIcon = true
 /Panel/Gtk/ToolBar/ShowSetupIcon = true
 /Panel/Gtk/ToolBar/ShowStickIcon = false
-/UpdateTimeStamp = 1517553047:636524
+/UpdateTimeStamp = 1518185736:854281
