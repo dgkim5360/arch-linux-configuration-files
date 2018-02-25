@@ -6,4 +6,12 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias grepall='grep --color=auto -nwR'
+alias off='shutdown'
+alias duo='xrandr --output HDMI1 --auto --right-of eDP1'
+alias heypacman='sudo pacman -Syyuu'
+
 PS1='[\u@\h \W]\$ '
+
+screenfetch -p
