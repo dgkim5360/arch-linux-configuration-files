@@ -65,3 +65,6 @@ nnoremap <leader>pt :PickerTabedit<cr>
 
 " vimtex options
 let g:vimtex_view_general_viewer = 'zathura'
+
+" Ale
+nnoremap <leader>A :ALENextWrap<cr>
