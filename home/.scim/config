@@ -1,4 +1,4 @@
-/DefaultIMEngineFactory/en_US = c6bebc27-6324-4b77-8ad4-6d41dcaf2e08
+/DefaultIMEngineFactory/en_US = 6e029d75-ef65-42a8-848e-332e63d70f9c
 /FrontEnd/ChangeFactoryGlobally = false
 /FrontEnd/IMOpenedByDefault = false
 /FrontEnd/OnTheSpot = true
@@ -13,7 +13,7 @@
 /Hotkeys/FrontEnd/Off = 
 /Hotkeys/FrontEnd/On = 
 /Hotkeys/FrontEnd/PreviousFactory = 
-/Hotkeys/FrontEnd/ShowFactoryMenu = 
+/Hotkeys/FrontEnd/ShowFactoryMenu = Control+Alt+Right
 /Hotkeys/FrontEnd/Trigger = Control+space
 /Hotkeys/FrontEnd/ValidKeyMask = Shift+Control+Alt+Meta+QuirkKanaRo
 /Hotkeys/IMEngine/List = d75857a5-4148-4745-89e2-1da7ddaf70a9
@@ -32,10 +32,11 @@
 /Panel/Gtk/Color/NormalText = black
 /Panel/Gtk/DefaultSticked = false
 /Panel/Gtk/Font = default
-/Panel/Gtk/LookupTableEmbedded = true
+/Panel/Gtk/LookupTableEmbedded = false
 /Panel/Gtk/LookupTableVertical = false
 /Panel/Gtk/ShowStatusBox = false
-/Panel/Gtk/ShowTrayIcon = true
+/Panel/Gtk/ShowTrayIcon = false
+/Panel/Gtk/ToolBar/AlwaysHidden = false
 /Panel/Gtk/ToolBar/AlwaysShow = false
 /Panel/Gtk/ToolBar/AutoSnap = true
 /Panel/Gtk/ToolBar/HideTimeout = 2
@@ -45,6 +46,7 @@
 /Panel/Gtk/ToolBar/ShowFactoryName = true
 /Panel/Gtk/ToolBar/ShowHelpIcon = true
 /Panel/Gtk/ToolBar/ShowMenuIcon = true
+/Panel/Gtk/ToolBar/ShowPropertyLabel = true
 /Panel/Gtk/ToolBar/ShowSetupIcon = true
 /Panel/Gtk/ToolBar/ShowStickIcon = false
-/UpdateTimeStamp = 1518185736:854281
+/UpdateTimeStamp = 1519734129:141856
