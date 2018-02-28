@@ -1,0 +1,11 @@
+#!/bin/sh
+# Written by Don Kim (dgkimdev@gmail.com)
+#
+# It reads "/path/to/repo:branchname" and update it (via `git up`).
+#
+# If you don't have `git up`, check this and consider it;
+# https://stackoverflow.com/questions/918886
+while IFS=':' read -ra PAIR; do
+	echo "${PAIR}"
+	cd ${PAIR[0]} && git checkout ${PAIR[1]} && git up ${PAIR[1]}
+done
