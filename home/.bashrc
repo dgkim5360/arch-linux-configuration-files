@@ -12,6 +12,11 @@ alias off='shutdown'
 alias duo='xrandr --output HDMI1 --auto --right-of eDP1'
 alias heypacman='sudo pacman -Syyuu'
 
+alias startdocker='sudo systemctl start docker'
+alias stopdocker='sudo systemctl stop docker'
+
+alias pully='~/.local/bin/pully < ~/.gitrepos'
+
 PS1='[\u@\h \W]\$ '
 
 screenfetch -p
