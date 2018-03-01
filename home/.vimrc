@@ -13,6 +13,7 @@ filetype plugin indent on
 
 colorscheme gruvbox
 set background=dark
+highlight Normal ctermbg=NONE
 
 set number
 set incsearch
