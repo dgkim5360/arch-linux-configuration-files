@@ -13,10 +13,12 @@ alias duo='xrandr --output HDMI1 --auto --right-of eDP1'
 alias s='sudo systemctl'
 alias heypacman='sudo pacman -Syyuu'
 
-alias startdocker='sudo systemctl start docker'
-alias stopdocker='sudo systemctl stop docker'
+alias docker='sudo docker'
+alias dcompose='sudo docker-compose'
 
 alias pully='~/.local/bin/pully < ~/.gitrepos'
+
+alias tslack='TERM=linux slack-term'
 
 PS1='[\u@\h \W]\$ '
 
