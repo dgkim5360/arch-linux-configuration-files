@@ -4,6 +4,7 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+source /usr/bin/virtualenvwrapper_lazy.sh
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
