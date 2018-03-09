@@ -11,6 +11,7 @@ alias grep='grep --color=auto'
 alias grepall='grep --color=auto -nwR'
 alias off='shutdown'
 alias duo='xrandr --output HDMI1 --auto --right-of eDP1'
+alias solo='xrandr --output HDMI1 --off'
 alias s='sudo systemctl'
 alias heypacman='sudo pacman -Syyuu'
 
