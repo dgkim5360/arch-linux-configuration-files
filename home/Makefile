@@ -9,6 +9,7 @@ sync:
 	@cp ~/.xinitrc .
 	@cp ~/.latexmkrc .
 	@cp ~/.config/dunst/dunstrc .config/dunst/
+	@cp ~/.fehbg .
 	@cp -r ~/.scim .
 	@echo "Done."
 	@echo "Updating suckless configurations ..."
