@@ -7,6 +7,7 @@
 source /usr/bin/virtualenvwrapper_lazy.sh
 
 alias ls='ls --color=auto'
+alias dush='du -sh *'
 alias grep='grep --color=auto'
 alias grepall='grep --color=auto -nwR'
 alias off='shutdown'
@@ -15,7 +16,7 @@ alias solo='xrandr --output HDMI1 --off'
 alias s='sudo systemctl'
 alias heypacman='sudo pacman -Syyuu'
 
-alias docker='sudo docker'
+alias dckr='sudo docker'
 alias dcompose='sudo docker-compose'
 
 alias pully='~/.local/bin/pully < ~/.gitrepos'
@@ -24,4 +25,4 @@ alias tslack='TERM=linux slack-term'
 
 PS1='[\u@\h \W]\$ '
 
-screenfetch -p
+screenfetch -n
