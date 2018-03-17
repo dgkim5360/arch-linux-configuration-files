@@ -1,1 +1,20 @@
-Configuration Files for My Arch Linux Desktop
+==========================================
+ Configuration Files for My Linux Desktop
+==========================================
+
+Currently I am using...
+
+* Arch Linux
+* Suckless environment
+  * dmenu
+  * dwm with patches (useless gap)
+  * st with patches (alpha, scrollback)
+  * tabbed + surf
+  * slock
+* clipmenu
+* vim with some plugins
+* sxiv, feh
+* mupdf, zathura
+* firefox
+* dunst
+* cmus
