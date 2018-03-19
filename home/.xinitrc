@@ -11,7 +11,7 @@ fi
 
 xset s 600
 clipmenud &
-xroot-status &
+.local/bin/xroot-status &
 .local/bin/xsidle.sh slock &
 ./.fehbg
 xcompmgr &
