@@ -1,3 +1,9 @@
 [submodule "home/builds/xroot-status"]
 	path = home/builds/xroot-status
 	url = https://github.com/dgkim5360/xroot-status.git
+[submodule "home/builds/dwm"]
+	path = home/builds/dwm
+	url = https://github.com/dgkim5360/dwm.git
+[submodule "home/builds/st"]
+	path = home/builds/st
+	url = https://github.com/dgkim5360/st.git
