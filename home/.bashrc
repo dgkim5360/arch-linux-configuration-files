@@ -20,6 +20,7 @@ alias dckr='sudo docker'
 alias dcompose='sudo docker-compose'
 
 alias pully='~/.local/bin/pully < ~/.gitrepos'
+alias na='~/.local/bin/note-after'
 
 alias tslack='TERM=linux slack-term'
 

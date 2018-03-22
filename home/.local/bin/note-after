@@ -1,0 +1,21 @@
+#!/usr/bin/sh
+# Written by Don Kim (dgkimdev@gmail.com)
+#
+# It executes whole arguments and pops a notification after finished.
+# Since it uses notify-send, libnotify is required.
+dowork() {
+	echo "$*"
+	"$@"
+}
+notesuccess() {
+	notify-send "DONE" "$*" -a "noteafter"
+}
+notefailure() {
+	notify-send "FAILED" "$*" -a "noteafter" -u "critical"
+}
+
+{
+	dowork "$@" && notesuccess "$@"
+} || {
+	notefailure "$@"
+}
